@@ -37,31 +37,6 @@ int main()
 			}
 		}
 	}
-	void sort()
-	{
-		for(i=0;i<pr_num-1;i++)
-		{
-			for(j=i+1;j<pr_num;j++)
-			{
-				if(A_time[i]>A_time[j])
-				{
-					int temp=B_time[i];
-                                        B_time[i]=B_time[j];
-                                        B_time[j]=temp;
- 
-                                        temp=A_time[i];
-                                        A_time[i]=A_time[j];
-                                        A_time[j]=temp;
- 
-                                        temp=p_id[i];
-                                        p_id[i]=p_id[j];
-                                        p_id[j]=temp;
-				}
-			}
-		}
-
-	}
-	sort();
 	for(i=0;i<pr_num;i++)
 	{
 		swap(i);
